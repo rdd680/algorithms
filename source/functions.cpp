@@ -21,9 +21,11 @@ int log(int base, int num) {
 }
 
 int chartoint(char c) {
-  int result = (int)c;
-  result -= '0';
-  return result;
+  if((int)c <=9){
+    return (int)c;
+  } else {
+    return chartoint(c-48);
+  }
 }
 
 char inttochar(int x) {

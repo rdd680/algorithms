@@ -56,7 +56,7 @@ TEST_CASE("Testing the logarithm function") {
 }
 
 /** Character to Int.
- * Returns the integer value of the given character [0, 9].
+ * Returns the integer value of the given character [0, 9].git commit
  * O(?)
  */
 int chartoint(char c);
