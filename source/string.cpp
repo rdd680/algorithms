@@ -1,8 +1,5 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "string.hpp"
-
-#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include "string.hpp"
 #include <iostream>
 
 
