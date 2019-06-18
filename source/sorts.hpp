@@ -103,7 +103,7 @@ void quicksort(int* arr, int n);
 
 void quicksort(int* arr, int lo, int hi);
 
-void advanced_sort(int* arr, int n);
+void Cycle_sort(int* arr, int n);
 
 sort_fn sorts[] = {bubble_sort, insertion_sort, selection_sort, mergesort,
                    quicksort};
