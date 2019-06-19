@@ -117,7 +117,28 @@ int partition(int* arr, int lo, int hi) {
   //
 void Cycle_sort(int* arr, int n){
   /*  
-  
-
+  for loop through array picking first point
+    var for num is that array point
+    var for its spot as in loop index
+    for loop from point after spot through rest of array
+      if the array @ index of loop is < num
+        spot ++
+      if its ==
+        keep going
+      while its ==
+        spot ++ to keep it going
+      if != 
+        swap em
+      while !=
+        make swap point new start point
+        for loop through array after new swap point to n
+          if the array @ index of loop is < num
+            spot ++
+          if its ==
+            keep going
+          while its ==
+            spot ++ to keep it going
+          if != 
+            swap em
   */
 }

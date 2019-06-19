@@ -106,9 +106,9 @@ void quicksort(int* arr, int lo, int hi);
 void Cycle_sort(int* arr, int n);
 
 sort_fn sorts[] = {bubble_sort, insertion_sort, selection_sort, mergesort,
-                   quicksort};
-char names[][20] = {"Bubble sort", "Insertion sort", "Selection sort",
-                    "Mergesort", "Quicksort"};
+                   quicksort, Cycle_sort};
+char names[][24] = {"Bubble sort", "Insertion sort", "Selection sort",
+                    "Mergesort", "Quicksort", "Cycle_sort"};
 
 TEST_CASE("Testing sorting functions") {
   int arr1[1] = {1};
