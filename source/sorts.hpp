@@ -107,8 +107,8 @@ void Cycle_sort(int* arr, int n);
 
 sort_fn sorts[] = {bubble_sort, insertion_sort, selection_sort, mergesort,
                    quicksort, Cycle_sort};
-char names[][24] = {"Bubble sort", "Insertion sort", "Selection sort",
-                    "Mergesort", "Quicksort", "Cycle_sort"};
+char names[][32] = {"Bubble sort", "Insertion sort", "Selection sort",
+                    "Mergesort", "Quicksort", "Cyclesort"};
 
 TEST_CASE("Testing sorting functions") {
   int arr1[1] = {1};
