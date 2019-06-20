@@ -29,6 +29,13 @@ p {
   font-size: 1.5em;
 }
 
+<<<<<<< HEAD
+=======
+li {
+  font-size: 1.4em;
+}
+
+>>>>>>> upstream/master
 a {
   color: #0738be;
   text-decoration: none;
