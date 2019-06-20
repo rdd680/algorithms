@@ -1,0 +1,36 @@
+dist: xenial
+language:
+  - cpp
+compiler:
+  - gcc
+addons:
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - gcc-8
+      - g++-8
+
+matrix:
+  include:
+    - name: "All"
+      env:
+      - TARGET=all
+    - name: "Strings"
+      env: 
+      - TARGET=string
+    - name: "Iterative Functions"
+      env:
+      - TARGET=functions
+    - name: "Recursive Functions"
+      env:
+      - TARGET=functions_recursive
+    - name: "Sorts"
+      env:
+      - TARGET=sorts
+    - name: "SLL"
+      env:
+      - TARGET=SLL
+
+script:
+  - make CXX=g++-8 $TARGET
