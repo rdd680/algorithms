@@ -6,6 +6,8 @@
  */
 class Stack {
  private:
+  int top;
+  int sz;
  public:
   Stack();
   ~Stack();

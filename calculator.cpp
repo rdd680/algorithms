@@ -9,7 +9,29 @@
  *   Otherwise, print an exception.
  */
 int main() {
+  while(true){
+    char expression[8];
+    std::cin >> expression;
+    for(int i = 0; i<8; ++i){
+      switch (*expression){
+      case "(":
+        break;
+      case "+":
+      case "-":
+      case "*":
+      case "/":
+      case "sqrt":
+        break;
+
+      default:
+        break;
+      }
+    }
+  }
+
+  /* 
   char expression[] = "1 + 2";
   std::cout << twostack(expression) << std::endl;
   return 0;
+  */
 }
