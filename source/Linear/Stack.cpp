@@ -1,7 +1,10 @@
+#include <iostream>
 #include "Stack.hpp"
+#include "LinkedList.hpp"
 
 Stack::Stack(){
-    int top = 0;
+    int fr = 0;
+
 
 }
 Stack::~Stack(){
@@ -9,27 +12,32 @@ Stack::~Stack(){
 }
 
 unsigned int Stack::size(){
-    
+    return fr;
 }
 
 void Stack::push(int data){
-    return;
+    if(fr+1 > max) throw "overflow";
+    ++fr;
+    stack[fr] = &data;
 }
 
 int Stack::pop(){
-    return 0;
+    if (empty()) throw "Error";
+    --fr;
+    return *stack[fr+1];
 }
 
 int Stack::top(){
-    return 0;
+return 0;
 }
 
 bool Stack::empty(){
-    return true;
+    if (fr < 0) return true;
+    return false;
 }
 
 
 void Stack::clear(){
-    return;
+    delete[] *stack;
 }
 
