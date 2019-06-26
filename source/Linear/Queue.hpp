@@ -1,13 +1,19 @@
 #pragma once
 #include "LinkedList.hpp"
 
+#include "LinkedList.hpp"
+
 /** Queue
  * A container class that stores data using a FIFO
  * (first in, first out) scheme.
  */
 class Queue {
  private:
+<<<<<<< HEAD
   LinkedList *list;
+=======
+  LinkedList* list;
+>>>>>>> upstream/master
 
  public:
   Queue();

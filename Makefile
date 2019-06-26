@@ -39,6 +39,9 @@ Dequeue: source/Linear/Dequeue.test.cpp source/Linear/Dequeue.cpp source/Linear/
 >>>>>>> upstream/master
 	$(CXX) $(FLAGS) $^ && ./a.out
 
+%: source/Trees/%.test.cpp source/Trees/%.cpp
+	$(CXX) $(FLAGS) $^ && ./a.out
+
 all: $(TARGETS) 
 
 .PHONY: clean

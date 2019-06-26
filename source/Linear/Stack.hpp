@@ -1,4 +1,5 @@
 #pragma once
+#include "LinkedList.hpp"
 
 /** Stack
  * A container class that stores data using a LIFO
@@ -6,9 +7,10 @@
  */
 class Stack {
  private:
-  static const int max= 10; //define 10 elements in the Stack
+  /* static const int max= 10; //define 10 elements in the Stack
   int stack[max]; //stack array of integers
   int fr;
+  */
 
  public:
   Stack();
