@@ -6,10 +6,13 @@
  */
 class Stack {
  private:
+  static const int max= 10; //define 10 elements in the Stack
+  int stack[max]; //stack array of integers
+  int fr;
+
  public:
   Stack();
   ~Stack();
-
   /** size()
    * Returns the size of the stack.
    */
