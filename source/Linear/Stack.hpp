@@ -4,10 +4,12 @@
  * A container class that stores data using a LIFO
  * (last in, first out) scheme.
  */
+
 class Stack {
  private:
-  int top;
-  int sz;
+  int fr;
+  int *stack[];
+  int max;
  public:
   Stack();
   ~Stack();
